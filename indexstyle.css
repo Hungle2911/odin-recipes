@@ -1,0 +1,10 @@
+li {width: 50%;
+    border: none;
+    margin-left: -100px ;
+    padding: 20px;
+   font:  25px  Arial, sans-serif;
+    display: block;
+    text-align: right;}
+#Tuna-fish-salad{background-color: aqua}
+#Scallop-spagetti{background-color: aquamarine;}
+#Dijon-salmon{background-color: antiquewhite}

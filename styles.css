@@ -1,0 +1,24 @@
+* {margin: auto;
+    text-align: center;
+padding: 2px;}
+fieldset{float: left;
+        width: 35%; 
+        margin-left: auto;
+        margin-right: auto;
+        }
+ul li{padding-left: 10px;
+list-style: none;}
+
+.instruction{width: 60%;
+            border-color: whitesmoke;
+            display: inline-block;
+}
+.inline {width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: left;}
+#main-page {position: fixed;
+            bottom: 50px;
+            background-color: black;
+            width: 5%;
+            }
+#main-page:hover{background-color: red;}
