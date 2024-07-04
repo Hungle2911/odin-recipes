@@ -2,7 +2,7 @@
 require "fileutils"
 
 APP_ROOT = File.expand_path("..", __dir__)
-APP_NAME = "back_end"
+APP_NAME = "recipe_sharing_api"
 
 def system!(*args)
   system(*args, exception: true)
