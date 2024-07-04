@@ -11,11 +11,6 @@ const Home = () => {
           <h2 className="text-2xl text-gray-700 mb-6">Welcome to the family</h2>
         </em>
       </strong>
-      <img
-        src="assets/Smiling-male-chef-768.jpg"
-        alt="A smiling male chef"
-        className="w-80 h-auto mb-6"
-      />
       <Link
         to="/recipes"
         className="px-6 py-3 bg-blue-600 text-white rounded-lg text-lg hover:bg-blue-700"
