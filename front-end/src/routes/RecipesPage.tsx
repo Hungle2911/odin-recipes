@@ -3,17 +3,12 @@ import { useQuery } from "@tanstack/react-query";
 import RecipeCard from "../components/RecipeCard";
 import NoRecipes from "../components/NoRecipe";
 import { useEffect } from "react";
+import API from "../API/axios.config";
 
 const fetchRecipes = async () => {
-  const url = "http://localhost:3000/api/v1/recipes";
   try {
-    const res = await fetch(url);
-    if (!res.ok) {
-      throw new Error("Network response was not ok.");
-    }
-    const data = await res.json();
-    console.log(data);
-    return data;
+    const response = await API.get("/recipes");
+    return response.data;
   } catch (error) {
     throw new Error("Failed to fetch recipes");
   }
