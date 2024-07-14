@@ -1,4 +1,8 @@
-const Hero = ({ image, name }) => (
+interface HeroProps {
+  image: string;
+  name: string;
+}
+const Hero = ({ image, name }: HeroProps) => (
   <div className="relative flex items-center justify-center h-96">
     <img
       src={image}

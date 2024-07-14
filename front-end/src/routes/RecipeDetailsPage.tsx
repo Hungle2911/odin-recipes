@@ -2,6 +2,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import Hero from "../components/RecipeHero";
 import RecipeIngredients from "../components/RecipeIngredients";
 import Instructions from "../components/RecipeInstruction";
+import { useQuery } from "@tanstack/react-query";
 
 const RecipeDetailsPage = () => {
   const recipe = {
@@ -18,6 +19,9 @@ const RecipeDetailsPage = () => {
     created_at: "2024-07-05T02:34:56.758Z",
     updated_at: "2024-07-05T02:34:56.758Z",
   };
+  // const {data, loading} = useQuery({
+
+  // })
   return (
     <>
       <Hero image={recipe.image} name={recipe.name} />
