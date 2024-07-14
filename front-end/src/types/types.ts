@@ -10,5 +10,5 @@ export interface RecipeDetails {
   image: string;
   name: string;
   ingredients: string;
-  instructions: string;
+  instruction: string;
 }
