@@ -37,5 +37,9 @@ module RecipeSharingApi
           methods: [:get, :post, :put, :patch, :delete, :options, :head]
       end
     end
+    #Handle session
+    config.middleware.use ActionDispatch::Cookies
+config.middleware.use ActionDispatch::Session::CookieStore, key: '_your_app_session'
+
   end
 end

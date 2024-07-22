@@ -1,4 +1,5 @@
 class Api::V1::RecipesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_recipe, only: [:show, :destroy]
    # GET /api/v1/recipes
    def index
