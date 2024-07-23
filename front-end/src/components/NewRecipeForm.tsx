@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
-
+import { useForm } from "react-hook-form";
+import { RecipeDetails } from "../types/types";
 const NewRecipeForm = () => {
+  // const { register, handleSubmit } = useForm<RecipeDetails>();
   return (
     <form className="w-2/3">
       <div className="mb-4">

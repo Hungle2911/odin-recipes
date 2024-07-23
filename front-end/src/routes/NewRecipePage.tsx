@@ -1,4 +1,3 @@
-import React from "react";
 import NewRecipeForm from "../components/NewRecipeForm";
 
 const NewRecipePage = () => {
