@@ -3,20 +3,19 @@ import { useQuery } from "@tanstack/react-query";
 import RecipeCard from "../components/RecipeCard";
 import NoRecipes from "../components/NoRecipe";
 import { useEffect } from "react";
-import API from "../API/axios.config";
-
-const fetchRecipes = async () => {
-  try {
-    const response = await API.get("/recipes");
-    return response.data;
-  } catch (error) {
-    throw new Error("Failed to fetch recipes");
-  }
-};
+import { useApi } from "../API/axios.config";
 
 const RecipesPage = () => {
   const navigate = useNavigate();
-
+  const API = useApi();
+  const fetchRecipes = async () => {
+    try {
+      const response = await API.get("/recipes");
+      return response.data;
+    } catch (error) {
+      throw new Error("Failed to fetch recipes");
+    }
+  };
   const {
     data: recipes = [],
     error,
